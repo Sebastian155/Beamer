@@ -29,6 +29,7 @@
               {
                   disabled.style.display = 'block';
                   enabled.style.display = 'none';
+                  Puck.write('LED.set();\n');
                   sendIR(power);
               });
 
@@ -36,6 +37,7 @@
               {
                   enabled.style.display = 'block';
                   disabled.style.display = 'none';
+                  Puck.write('LED.reset();\n');
                   sendIR(power);
               });
         </script>
